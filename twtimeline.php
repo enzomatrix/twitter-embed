@@ -8,6 +8,18 @@ $user = $_GET['user'];
 ?>
 <html data-layout-mode="dark">
 <head>
+	<title>
+<?php
+if ($_GET['user']) {
+	echo 'Tweets de @'.$user;
+}
+else
+{
+	echo 'Buscar timeline de Twitter';
+}
+?>
+	</title>
+	<link rel="icon" type="image/x-icon" href="/img/Bokehlicia-Captiva-Web-twitter-2.32.png">
     <style>
         body {
             padding: 25px;
