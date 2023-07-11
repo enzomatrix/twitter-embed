@@ -1,8 +1,6 @@
 <?php
 error_reporting(0);
 
-//error_reporting(E_ALL);
-//ini_set('display_errors', 1);
 
 if ($_GET['tweet']) {
 	$tweet = $_GET['tweet'];
@@ -13,8 +11,6 @@ if ($_GET['tweet']) {
     $input = curl_exec($ch);
 
     $info = curl_getinfo($ch);
-    //print_r($info);
-    //print_r($input);
     curl_close($ch);
 
 	$json = json_decode($input, true);
